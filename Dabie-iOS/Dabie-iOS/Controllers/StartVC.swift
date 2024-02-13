@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RootViewController: UIViewController {
+class StartVC: UIViewController {
     
     // MARK: Properties
     
