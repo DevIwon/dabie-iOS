@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		546CCB092B70F71200802701 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CCB082B70F71200802701 /* Coordinator.swift */; };
+		5494A4BC2B7B547B0085E804 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 5494A4BB2B7B547B0085E804 /* Then */; };
 		54D4ACB72B70D62A00251A22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4ACB62B70D62A00251A22 /* AppDelegate.swift */; };
 		54D4ACB92B70D62A00251A22 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54D4ACB82B70D62A00251A22 /* SceneDelegate.swift */; };
 		54D4ACC02B70D62C00251A22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54D4ACBF2B70D62C00251A22 /* Assets.xcassets */; };
@@ -31,12 +32,34 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5494A4BC2B7B547B0085E804 /* Then in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5494A4B72B7B51C80085E804 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5494A4B82B7B52280085E804 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		5494A4B92B7B53190085E804 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		54D4ACAA2B70D62A00251A22 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +79,16 @@
 		54D4ACB52B70D62A00251A22 /* Dabie-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				54D4ACCA2B70D69500251A22 /* Controllers */,
 				54D4ACB62B70D62A00251A22 /* AppDelegate.swift */,
 				54D4ACB82B70D62A00251A22 /* SceneDelegate.swift */,
+				546CCB082B70F71200802701 /* Coordinator.swift */,
+				5494A4B82B7B52280085E804 /* Services */,
+				5494A4B72B7B51C80085E804 /* Models */,
+				5494A4B92B7B53190085E804 /* Views */,
+				54D4ACCA2B70D69500251A22 /* Controllers */,
 				54D4ACBF2B70D62C00251A22 /* Assets.xcassets */,
 				54D4ACC12B70D62C00251A22 /* LaunchScreen.storyboard */,
 				54D4ACC42B70D62C00251A22 /* Info.plist */,
-				546CCB082B70F71200802701 /* Coordinator.swift */,
 			);
 			path = "Dabie-iOS";
 			sourceTree = "<group>";
@@ -91,6 +117,9 @@
 			dependencies = (
 			);
 			name = "Dabie-iOS";
+			packageProductDependencies = (
+				5494A4BB2B7B547B0085E804 /* Then */,
+			);
 			productName = "Dabie-iOS";
 			productReference = 54D4ACB32B70D62A00251A22 /* Dabie-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -119,6 +148,9 @@
 				Base,
 			);
 			mainGroup = 54D4ACAA2B70D62A00251A22;
+			packageReferences = (
+				5494A4BA2B7B547B0085E804 /* XCRemoteSwiftPackageReference "Then" */,
+			);
 			productRefGroup = 54D4ACB42B70D62A00251A22 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -365,6 +397,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5494A4BA2B7B547B0085E804 /* XCRemoteSwiftPackageReference "Then" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devxoul/Then";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5494A4BB2B7B547B0085E804 /* Then */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5494A4BA2B7B547B0085E804 /* XCRemoteSwiftPackageReference "Then" */;
+			productName = Then;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 54D4ACAB2B70D62A00251A22 /* Project object */;
 }
