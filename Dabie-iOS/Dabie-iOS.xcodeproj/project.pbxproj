@@ -14,6 +14,7 @@
 		54552A162B7B77C800A0F5AC /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A152B7B77C800A0F5AC /* LoadingView.swift */; };
 		54552A182B7B77D200A0F5AC /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A172B7B77D200A0F5AC /* QuestionView.swift */; };
 		54552A1A2B7B77DC00A0F5AC /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A192B7B77DC00A0F5AC /* ResultView.swift */; };
+		54552A1D2B7B798500A0F5AC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 54552A1C2B7B798500A0F5AC /* Lottie */; };
 		546CCB092B70F71200802701 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CCB082B70F71200802701 /* Coordinator.swift */; };
 		5494A4BC2B7B547B0085E804 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 5494A4BB2B7B547B0085E804 /* Then */; };
 		54C39B912B7B753F00093D1C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 54C39B902B7B753F00093D1C /* SnapKit */; };
@@ -49,6 +50,7 @@
 			files = (
 				5494A4BC2B7B547B0085E804 /* Then in Frameworks */,
 				54C39B912B7B753F00093D1C /* SnapKit in Frameworks */,
+				54552A1D2B7B798500A0F5AC /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,7 @@
 			packageProductDependencies = (
 				5494A4BB2B7B547B0085E804 /* Then */,
 				54C39B902B7B753F00093D1C /* SnapKit */,
+				54552A1C2B7B798500A0F5AC /* Lottie */,
 			);
 			productName = "Dabie-iOS";
 			productReference = 54D4ACB32B70D62A00251A22 /* Dabie-iOS.app */;
@@ -175,6 +178,7 @@
 			packageReferences = (
 				5494A4BA2B7B547B0085E804 /* XCRemoteSwiftPackageReference "Then" */,
 				54C39B8F2B7B753F00093D1C /* XCRemoteSwiftPackageReference "SnapKit" */,
+				54552A1B2B7B798500A0F5AC /* XCRemoteSwiftPackageReference "lottie-spm" */,
 			);
 			productRefGroup = 54D4ACB42B70D62A00251A22 /* Products */;
 			projectDirPath = "";
@@ -431,6 +435,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		54552A1B2B7B798500A0F5AC /* XCRemoteSwiftPackageReference "lottie-spm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-spm.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
 		5494A4BA2B7B547B0085E804 /* XCRemoteSwiftPackageReference "Then" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/devxoul/Then";
@@ -450,6 +462,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		54552A1C2B7B798500A0F5AC /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 54552A1B2B7B798500A0F5AC /* XCRemoteSwiftPackageReference "lottie-spm" */;
+			productName = Lottie;
+		};
 		5494A4BB2B7B547B0085E804 /* Then */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 5494A4BA2B7B547B0085E804 /* XCRemoteSwiftPackageReference "Then" */;
