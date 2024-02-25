@@ -10,8 +10,8 @@ import UIKit
 class StartVC: UIViewController {
     
     //MARK: - Views
-       private var startView: StartView!
-    // MARK: Properties
+    private var startView: StartView!
+    //MARK: - Properties
     
     //MARK: - Life Cycles
     override func loadView() {
@@ -20,8 +20,16 @@ class StartVC: UIViewController {
         startView = StartView(frame: self.view.frame)
         self.view = startView
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        startView.startButton.addTarget(self, action: #selector(clickedStartButton(sender:)), for: .touchUpInside)
+    }
+    //MARK: - Actions
+    @objc func clickedStartButton(sender: UIButton) {
+        let questionVC = QuestionVC()
+        questionVC.modalPresentationStyle = .fullScreen
+        
+        present(questionVC, animated: false, completion: nil)
     }
 }
