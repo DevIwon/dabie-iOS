@@ -9,23 +9,19 @@ import UIKit
 
 class StartVC: UIViewController {
     
+    //MARK: - Views
+       private var startView: StartView!
     // MARK: Properties
     
-    // MARK: Lifecycles
-    
+    //MARK: - Life Cycles
+    override func loadView() {
+        super.loadView()
+        
+        startView = StartView(frame: self.view.frame)
+        self.view = startView
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        configureUI()
     }
-    
-
-    // MARK: Configures
-    func configureUI() {
-        view.backgroundColor = .red
-    }
-
-  
-
 }

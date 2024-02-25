@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		54060D462B7E07F700DA3F61 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 54060D452B7E07F700DA3F61 /* FirebaseAnalytics */; };
+		542B60782B8B26A800DC18F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 542B60772B8B26A800DC18F4 /* GoogleService-Info.plist */; };
+		542B607C2B8B275700DC18F4 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B607B2B8B275700DC18F4 /* Color+.swift */; };
+		542B607E2B8B278C00DC18F4 /* omyu pretty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 542B607D2B8B278C00DC18F4 /* omyu pretty.ttf */; };
 		54552A0E2B7B776900A0F5AC /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A0D2B7B776900A0F5AC /* LoadingVC.swift */; };
 		54552A102B7B777200A0F5AC /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A0F2B7B777200A0F5AC /* QuestionVC.swift */; };
 		54552A122B7B777A00A0F5AC /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A112B7B777A00A0F5AC /* ResultVC.swift */; };
@@ -27,6 +30,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		542B60772B8B26A800DC18F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		542B607B2B8B275700DC18F4 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		542B607D2B8B278C00DC18F4 /* omyu pretty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "omyu pretty.ttf"; sourceTree = "<group>"; };
 		54552A0D2B7B776900A0F5AC /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		54552A0F2B7B777200A0F5AC /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
 		54552A112B7B777A00A0F5AC /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
@@ -59,6 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		542B60792B8B273500DC18F4 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				542B607B2B8B275700DC18F4 /* Color+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		542B607A2B8B273D00DC18F4 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				542B607D2B8B278C00DC18F4 /* omyu pretty.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
 		5494A4B72B7B51C80085E804 /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,10 +130,13 @@
 				546CCB082B70F71200802701 /* Coordinator.swift */,
 				5494A4B82B7B52280085E804 /* Services */,
 				5494A4B72B7B51C80085E804 /* Models */,
+				542B607A2B8B273D00DC18F4 /* Font */,
+				542B60792B8B273500DC18F4 /* Extension */,
 				5494A4B92B7B53190085E804 /* Views */,
 				54D4ACCA2B70D69500251A22 /* Controllers */,
 				54D4ACBF2B70D62C00251A22 /* Assets.xcassets */,
 				54D4ACC12B70D62C00251A22 /* LaunchScreen.storyboard */,
+				542B60772B8B26A800DC18F4 /* GoogleService-Info.plist */,
 				54D4ACC42B70D62C00251A22 /* Info.plist */,
 			);
 			path = "Dabie-iOS";
@@ -199,7 +224,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				54D4ACC32B70D62C00251A22 /* LaunchScreen.storyboard in Resources */,
+				542B607E2B8B278C00DC18F4 /* omyu pretty.ttf in Resources */,
 				54D4ACC02B70D62C00251A22 /* Assets.xcassets in Resources */,
+				542B60782B8B26A800DC18F4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54552A182B7B77D200A0F5AC /* QuestionView.swift in Sources */,
+				542B607C2B8B275700DC18F4 /* Color+.swift in Sources */,
 				546CCB092B70F71200802701 /* Coordinator.swift in Sources */,
 				54552A1A2B7B77DC00A0F5AC /* ResultView.swift in Sources */,
 				54D4ACB72B70D62A00251A22 /* AppDelegate.swift in Sources */,
@@ -370,6 +398,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -399,6 +428,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
