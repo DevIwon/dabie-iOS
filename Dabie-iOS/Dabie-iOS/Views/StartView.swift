@@ -94,8 +94,7 @@ class StartView: UIView {
         self.addSubview(starBackground)
         self.addSubview(logoImage)
         
-        logoImage.loopMode = .loop // 애니메이션 반복 여부 설정
-        
+        logoImage.loopMode = .loop
         logoImage.animationSpeed = 0.8
         
         logoImage.snp.makeConstraints {

@@ -8,7 +8,6 @@
 import UIKit
 
 extension UIColor {
-    // MARK: hexString
     convenience init(hex: String) {
         let scanner = Scanner(string: hex)
         _ = scanner.scanString("#")
