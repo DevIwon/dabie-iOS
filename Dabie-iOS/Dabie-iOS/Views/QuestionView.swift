@@ -5,7 +5,6 @@
 //  Created by 서원진 on 2024/02/13.
 //
 
-import Foundation
 import UIKit
 
 class QuestionView: UIView {
@@ -13,12 +12,10 @@ class QuestionView: UIView {
     //MARK: - Views
     lazy var mainHeader = UIImageView().then {
         $0.image = UIImage(named: "questionHeader")
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
     lazy var textWindowImage = UIImageView().then {
         $0.image = UIImage(named: "Character Text Window")
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
     lazy var textView = UITextView().then {
@@ -38,7 +35,6 @@ class QuestionView: UIView {
         $0.layer.cornerRadius = 30
         $0.setTitle("해답 들으러 가기", for: .normal)
         $0.titleLabel?.font = UIFont(name: "omyu pretty", size: 24)
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
     //MARK: - Init

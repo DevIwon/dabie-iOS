@@ -16,26 +16,22 @@ class StartView: UIView {
     //MARK: - Views
     lazy var mainHeader = UIImageView().then {
         $0.image = UIImage(named: "mainHeader-x2")
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
     lazy var logoImage: LottieAnimationView = .init(name: "main_character")
     
     lazy var starBackground = UIImageView().then {
         $0.image = UIImage(named: "star_img")
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
     lazy var paperBackground = UIImageView().then {
         $0.image = UIImage(named: "paper_img")
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
     lazy var startButton = UIButton().then {
         $0.backgroundColor = UIColor(hex: "#4C3220")
         $0.layer.masksToBounds = true
         $0.layer.cornerRadius = 40
-        $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
     lazy var startText = UILabel().then {

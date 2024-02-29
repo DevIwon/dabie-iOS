@@ -23,11 +23,19 @@ class QuestionVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-  
+        questionView.anwserButton.addTarget(self, action: #selector(clickedAnwserButton(sender:)), for: .touchUpInside)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    //MARK: - Actions
+    @objc func clickedAnwserButton(sender: UIButton) {
+        let loadingVC = LoadingVC()
+        loadingVC.modalPresentationStyle = .fullScreen
+        
+        present(loadingVC, animated: false, completion: nil)
     }
 }
 
