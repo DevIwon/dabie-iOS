@@ -98,8 +98,6 @@ class StartView: UIView {
         logoImage.animationSpeed = 0.8
         
         logoImage.snp.makeConstraints {
-            $0.width.equalTo(280)
-            $0.height.equalTo(317)
             $0.top.equalTo(mainHeader.snp.bottom).offset(35)
             $0.centerX.centerY.equalToSuperview()
         }

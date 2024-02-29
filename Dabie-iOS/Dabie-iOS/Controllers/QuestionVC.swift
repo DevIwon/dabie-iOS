@@ -18,11 +18,31 @@ class QuestionVC: UIViewController {
         
         questionView = QuestionView(frame: self.view.frame)
         self.view = questionView
+        questionView.textView.delegate = self
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
   
     }
-  
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 }
+
+extension QuestionVC: UITextViewDelegate {
+        
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        questionView.placeHolder.text = ""
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        
+        if textView.text.count > 100 {
+            textView.deleteBackward()
+        }
+    }
+}
+
+

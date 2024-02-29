@@ -21,6 +21,17 @@ class QuestionView: UIView {
         $0.translatesAutoresizingMaskIntoConstraints = false
     }
     
+    lazy var textView = UITextView().then {
+        $0.font = UIFont(name: "omyu pretty", size: 18)
+        $0.backgroundColor = .clear
+    }
+    
+    lazy var placeHolder = UILabel().then {
+        $0.text = "고민을 적어주세요!"
+        $0.font = UIFont(name: "omyu pretty", size: 24)
+        $0.textColor = UIColor(hex: "#CBB8AC")
+    }
+    
     lazy var anwserButton = UIButton().then {
         $0.backgroundColor = UIColor(hex: "#4C3220")
         $0.layer.masksToBounds = true
@@ -45,7 +56,7 @@ class QuestionView: UIView {
     private func setup() {
         setUpBackground()
         setUpMainHeader()
-        setUpMainImage()
+        setUpQuestionBox()
         setUpAnwserButton()
     }
     
@@ -63,12 +74,26 @@ class QuestionView: UIView {
         }
     }
     
-    func setUpMainImage() {
+    func setUpQuestionBox() {
         self.addSubview(textWindowImage)
+        self.addSubview(textView)
+        self.addSubview(placeHolder)
         textWindowImage.snp.makeConstraints {
             $0.width.equalTo(343)
             $0.height.equalTo(380)
             $0.centerX.centerY.equalToSuperview()
+        }
+        
+        placeHolder.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(mainHeader.snp.bottom).offset(300)
+        }
+        
+        textView.snp.makeConstraints {
+            $0.width.equalTo(340)
+            $0.height.equalTo(300)
+            $0.centerX.equalToSuperview()
+            $0.top.equalTo(mainHeader.snp.bottom).offset(250)
         }
     }
     
@@ -81,6 +106,6 @@ class QuestionView: UIView {
             $0.centerX.equalToSuperview()
             $0.bottom.equalTo(self.safeAreaLayoutGuide.snp.bottom)
         }
- 
     }
 }
+
