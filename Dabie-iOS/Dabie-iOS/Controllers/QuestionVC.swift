@@ -9,7 +9,7 @@ import UIKit
 class QuestionVC: UIViewController {
     
     //MARK: - Views
-       private var questionView: QuestionView!
+    private var questionView: QuestionView!
     //MARK: - Properties
     
     //MARK: - Life Cycles
@@ -31,6 +31,7 @@ class QuestionVC: UIViewController {
     }
     
     //MARK: - Actions
+    
     @objc func clickedAnwserButton(sender: UIButton) {
         let loadingVC = LoadingVC()
         loadingVC.modalPresentationStyle = .fullScreen
@@ -46,7 +47,6 @@ extension QuestionVC: UITextViewDelegate {
     }
     
     func textViewDidChange(_ textView: UITextView) {
-        
         if textView.text.count > 100 {
             textView.deleteBackward()
         }

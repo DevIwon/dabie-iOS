@@ -101,13 +101,9 @@ class StartView: UIView {
         logoImage.play()
         
         starBackground.snp.makeConstraints {
-            $0.width.equalTo(350)
-            $0.height.equalTo(450)
             $0.centerX.centerY.equalToSuperview()
         }
         paperBackground.snp.makeConstraints {
-            $0.width.equalTo(400)
-            $0.height.equalTo(450)
             $0.centerX.centerY.equalToSuperview()
         }
     }

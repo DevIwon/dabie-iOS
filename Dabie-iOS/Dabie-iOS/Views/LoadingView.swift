@@ -47,6 +47,7 @@ class LoadingView: UIView {
         }
         
         loadingText.loopMode = .loop
+        loadingText.animationSpeed = 2
         
         loadingText.snp.makeConstraints {
             $0.centerX.equalToSuperview()

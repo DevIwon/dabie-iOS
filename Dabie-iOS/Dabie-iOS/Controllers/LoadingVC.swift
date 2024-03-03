@@ -24,6 +24,15 @@ class LoadingVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.moveToNextScreen()
+        }
     }
-
+    
+    func moveToNextScreen() {
+        let resultVC = ResultVC()
+        resultVC.modalPresentationStyle = .fullScreen
+        
+        present(resultVC, animated: false, completion: nil)
+    }
 }
