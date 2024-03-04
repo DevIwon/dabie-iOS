@@ -4,9 +4,8 @@
 //
 //  Created by 서원진 on 2024/02/13.
 //
-
-import UIKit
 import Lottie
+import UIKit
 
 class LoadingView: UIView {
     
