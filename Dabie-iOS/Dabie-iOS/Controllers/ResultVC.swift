@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseFirestore
 
 class ResultVC: UIViewController {
     
@@ -26,7 +28,7 @@ class ResultVC: UIViewController {
         super.viewDidLoad()
         
         buttonActions()
-        
+        getFireBaseData()
     }
     //MARK: - Actions
     func buttonActions() {
@@ -39,5 +41,18 @@ class ResultVC: UIViewController {
         quesitonVC.modalPresentationStyle = .fullScreen
         
         present(quesitonVC, animated: false, completion: nil)
+    }
+    
+    func getFireBaseData() {
+        MyFireStore.shared.fetchData { (anwsers, error) in
+            if let error = error {
+                print("Error getting documents: \(error)")
+            } else {
+                if let anwsers = anwsers?.randomElement() {
+                    self.resultView.getAnwserText(anwser: anwsers.text)
+                }
+            }
+        }
+
     }
 }

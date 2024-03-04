@@ -17,10 +17,9 @@ class ResultView: UIView {
         $0.image = UIImage(named: "speech_bubble")
     }
     
-    // MARK: To Do firebase data 연동
     lazy var anwserText = UILabel().then {
-        $0.text = "생각보다 지금 일어난일은 잘 풀리지 않을수도 있다비~\n하지만, 시간을 두고 보면 나중에는 하나의 경험이 될 수도 있다비~"
-        $0.font = UIFont(name: "omyu pretty", size: 20)
+        $0.text = ""
+        $0.font = UIFont(name: "omyu pretty", size: 24)
         $0.textAlignment = .center
         $0.textColor = UIColor(hex: "#4C3220")
         $0.numberOfLines = 0
@@ -67,6 +66,11 @@ class ResultView: UIView {
         setup()
     }
     
+    //MARK: - Methods
+    func getAnwserText(anwser: String) {
+        anwserText.text = anwser
+    }
+    
     //MARK: - Setup
     private func setup() {
         setUpBackground()
@@ -109,7 +113,7 @@ class ResultView: UIView {
         
         anwserText.snp.makeConstraints {
             $0.width.equalTo(260)
-            $0.top.equalTo(speechBubble.snp.top).offset(100)
+            $0.top.equalTo(speechBubble.snp.top).offset(120)
             $0.centerX.equalTo(speechBubble)
         }
         
