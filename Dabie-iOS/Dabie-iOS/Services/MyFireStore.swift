@@ -1,12 +1,10 @@
 //
-//  MyFireStore.swift
+//  MyFiresS.swift
 //  Dabie-iOS
 //
-//  Created by 서원진 on 2024/03/03.
+//  Created by 서원진 on 2024/03/04.
 //
-import FirebaseCore
 import FirebaseFirestore
-import FirebaseFirestoreSwift
 
 class MyFireStore {
     static let shared = MyFireStore()

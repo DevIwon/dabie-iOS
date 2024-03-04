@@ -11,6 +11,7 @@
 		542B60782B8B26A800DC18F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 542B60772B8B26A800DC18F4 /* GoogleService-Info.plist */; };
 		542B607C2B8B275700DC18F4 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B607B2B8B275700DC18F4 /* Color+.swift */; };
 		542B607E2B8B278C00DC18F4 /* omyu pretty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 542B607D2B8B278C00DC18F4 /* omyu pretty.ttf */; };
+		543D55C22B959ECE00EA031C /* MyFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D55C12B959ECE00EA031C /* MyFireStore.swift */; };
 		54552A0E2B7B776900A0F5AC /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A0D2B7B776900A0F5AC /* LoadingVC.swift */; };
 		54552A102B7B777200A0F5AC /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A0F2B7B777200A0F5AC /* QuestionVC.swift */; };
 		54552A122B7B777A00A0F5AC /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A112B7B777A00A0F5AC /* ResultVC.swift */; };
@@ -19,8 +20,6 @@
 		54552A182B7B77D200A0F5AC /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A172B7B77D200A0F5AC /* QuestionView.swift */; };
 		54552A1A2B7B77DC00A0F5AC /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A192B7B77DC00A0F5AC /* ResultView.swift */; };
 		54552A1D2B7B798500A0F5AC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 54552A1C2B7B798500A0F5AC /* Lottie */; };
-		546CCB092B70F71200802701 /* MyFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CCB082B70F71200802701 /* MyFireStore.swift */; };
-		548E36BE2B94959F00998384 /* MyFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548E36BD2B94959F00998384 /* MyFireStore.swift */; };
 		548E36C02B94966D00998384 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 548E36BF2B94966D00998384 /* FirebaseAnalytics */; };
 		548E36C22B94966D00998384 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 548E36C12B94966D00998384 /* FirebaseDatabase */; };
 		548E36C42B94966D00998384 /* FirebaseDatabaseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 548E36C32B94966D00998384 /* FirebaseDatabaseSwift */; };
@@ -41,6 +40,7 @@
 		542B60772B8B26A800DC18F4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		542B607B2B8B275700DC18F4 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		542B607D2B8B278C00DC18F4 /* omyu pretty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "omyu pretty.ttf"; sourceTree = "<group>"; };
+		543D55C12B959ECE00EA031C /* MyFireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFireStore.swift; sourceTree = "<group>"; };
 		54552A0D2B7B776900A0F5AC /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		54552A0F2B7B777200A0F5AC /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
 		54552A112B7B777A00A0F5AC /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
@@ -48,8 +48,6 @@
 		54552A152B7B77C800A0F5AC /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		54552A172B7B77D200A0F5AC /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		54552A192B7B77DC00A0F5AC /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
-		546CCB082B70F71200802701 /* MyFireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyFireStore.swift; path = Services/MyFireStore.swift; sourceTree = "<group>"; };
-		548E36BD2B94959F00998384 /* MyFireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyFireStore.swift; path = "Dabie-iOS/Services/MyFireStore.swift"; sourceTree = SOURCE_ROOT; };
 		54D4ACB32B70D62A00251A22 /* Dabie-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dabie-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D4ACB62B70D62A00251A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54D4ACB82B70D62A00251A22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -108,7 +106,7 @@
 		5494A4B82B7B52280085E804 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				548E36BD2B94959F00998384 /* MyFireStore.swift */,
+				543D55C12B959ECE00EA031C /* MyFireStore.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -145,7 +143,6 @@
 			children = (
 				54D4ACB62B70D62A00251A22 /* AppDelegate.swift */,
 				54D4ACB82B70D62A00251A22 /* SceneDelegate.swift */,
-				546CCB082B70F71200802701 /* MyFireStore.swift */,
 				5494A4B82B7B52280085E804 /* Services */,
 				5494A4B72B7B51C80085E804 /* Models */,
 				542B607A2B8B273D00DC18F4 /* Font */,
@@ -263,9 +260,7 @@
 			files = (
 				54552A182B7B77D200A0F5AC /* QuestionView.swift in Sources */,
 				542B607C2B8B275700DC18F4 /* Color+.swift in Sources */,
-				546CCB092B70F71200802701 /* MyFireStore.swift in Sources */,
 				54FAF0732B949B360004008F /* Anwser.swift in Sources */,
-				548E36BE2B94959F00998384 /* MyFireStore.swift in Sources */,
 				54552A1A2B7B77DC00A0F5AC /* ResultView.swift in Sources */,
 				54D4ACB72B70D62A00251A22 /* AppDelegate.swift in Sources */,
 				54D4ACB92B70D62A00251A22 /* SceneDelegate.swift in Sources */,
@@ -274,6 +269,7 @@
 				54552A122B7B777A00A0F5AC /* ResultVC.swift in Sources */,
 				54552A102B7B777200A0F5AC /* QuestionVC.swift in Sources */,
 				54552A0E2B7B776900A0F5AC /* LoadingVC.swift in Sources */,
+				543D55C22B959ECE00EA031C /* MyFireStore.swift in Sources */,
 				54552A162B7B77C800A0F5AC /* LoadingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
