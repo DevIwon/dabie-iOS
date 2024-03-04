@@ -19,7 +19,7 @@
 		54552A182B7B77D200A0F5AC /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A172B7B77D200A0F5AC /* QuestionView.swift */; };
 		54552A1A2B7B77DC00A0F5AC /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A192B7B77DC00A0F5AC /* ResultView.swift */; };
 		54552A1D2B7B798500A0F5AC /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 54552A1C2B7B798500A0F5AC /* Lottie */; };
-		546CCB092B70F71200802701 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CCB082B70F71200802701 /* Coordinator.swift */; };
+		546CCB092B70F71200802701 /* MyFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546CCB082B70F71200802701 /* MyFireStore.swift */; };
 		548E36BE2B94959F00998384 /* MyFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 548E36BD2B94959F00998384 /* MyFireStore.swift */; };
 		548E36C02B94966D00998384 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 548E36BF2B94966D00998384 /* FirebaseAnalytics */; };
 		548E36C22B94966D00998384 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 548E36C12B94966D00998384 /* FirebaseDatabase */; };
@@ -48,8 +48,8 @@
 		54552A152B7B77C800A0F5AC /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		54552A172B7B77D200A0F5AC /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		54552A192B7B77DC00A0F5AC /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
-		546CCB082B70F71200802701 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
-		548E36BD2B94959F00998384 /* MyFireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFireStore.swift; sourceTree = SOURCE_ROOT; };
+		546CCB082B70F71200802701 /* MyFireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyFireStore.swift; path = Services/MyFireStore.swift; sourceTree = "<group>"; };
+		548E36BD2B94959F00998384 /* MyFireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MyFireStore.swift; path = "Dabie-iOS/Services/MyFireStore.swift"; sourceTree = SOURCE_ROOT; };
 		54D4ACB32B70D62A00251A22 /* Dabie-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dabie-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D4ACB62B70D62A00251A22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54D4ACB82B70D62A00251A22 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,7 +57,7 @@
 		54D4ACC22B70D62C00251A22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		54D4ACC42B70D62C00251A22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		54D4ACCB2B70D6B700251A22 /* StartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartVC.swift; sourceTree = "<group>"; };
-		54FAF0722B949B360004008F /* Anwser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anwser.swift; sourceTree = SOURCE_ROOT; };
+		54FAF0722B949B360004008F /* Anwser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Anwser.swift; path = "Dabie-iOS/Models/Anwser.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,7 +145,7 @@
 			children = (
 				54D4ACB62B70D62A00251A22 /* AppDelegate.swift */,
 				54D4ACB82B70D62A00251A22 /* SceneDelegate.swift */,
-				546CCB082B70F71200802701 /* Coordinator.swift */,
+				546CCB082B70F71200802701 /* MyFireStore.swift */,
 				5494A4B82B7B52280085E804 /* Services */,
 				5494A4B72B7B51C80085E804 /* Models */,
 				542B607A2B8B273D00DC18F4 /* Font */,
@@ -263,7 +263,7 @@
 			files = (
 				54552A182B7B77D200A0F5AC /* QuestionView.swift in Sources */,
 				542B607C2B8B275700DC18F4 /* Color+.swift in Sources */,
-				546CCB092B70F71200802701 /* Coordinator.swift in Sources */,
+				546CCB092B70F71200802701 /* MyFireStore.swift in Sources */,
 				54FAF0732B949B360004008F /* Anwser.swift in Sources */,
 				548E36BE2B94959F00998384 /* MyFireStore.swift in Sources */,
 				54552A1A2B7B77DC00A0F5AC /* ResultView.swift in Sources */,
