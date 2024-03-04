@@ -12,6 +12,9 @@
 		542B607C2B8B275700DC18F4 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542B607B2B8B275700DC18F4 /* Color+.swift */; };
 		542B607E2B8B278C00DC18F4 /* omyu pretty.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 542B607D2B8B278C00DC18F4 /* omyu pretty.ttf */; };
 		543D55C22B959ECE00EA031C /* MyFireStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D55C12B959ECE00EA031C /* MyFireStore.swift */; };
+		543D55C42B959FB800EA031C /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D55C32B959FB800EA031C /* AlertView.swift */; };
+		543D55C62B959FC300EA031C /* AlertVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D55C52B959FC300EA031C /* AlertVC.swift */; };
+		543D55C82B95A25200EA031C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 543D55C72B95A25200EA031C /* Coordinator.swift */; };
 		54552A0E2B7B776900A0F5AC /* LoadingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A0D2B7B776900A0F5AC /* LoadingVC.swift */; };
 		54552A102B7B777200A0F5AC /* QuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A0F2B7B777200A0F5AC /* QuestionVC.swift */; };
 		54552A122B7B777A00A0F5AC /* ResultVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54552A112B7B777A00A0F5AC /* ResultVC.swift */; };
@@ -41,6 +44,9 @@
 		542B607B2B8B275700DC18F4 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 		542B607D2B8B278C00DC18F4 /* omyu pretty.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "omyu pretty.ttf"; sourceTree = "<group>"; };
 		543D55C12B959ECE00EA031C /* MyFireStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFireStore.swift; sourceTree = "<group>"; };
+		543D55C32B959FB800EA031C /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		543D55C52B959FC300EA031C /* AlertVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertVC.swift; sourceTree = "<group>"; };
+		543D55C72B95A25200EA031C /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		54552A0D2B7B776900A0F5AC /* LoadingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingVC.swift; sourceTree = "<group>"; };
 		54552A0F2B7B777200A0F5AC /* QuestionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionVC.swift; sourceTree = "<group>"; };
 		54552A112B7B777A00A0F5AC /* ResultVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultVC.swift; sourceTree = "<group>"; };
@@ -118,6 +124,7 @@
 				54552A172B7B77D200A0F5AC /* QuestionView.swift */,
 				54552A152B7B77C800A0F5AC /* LoadingView.swift */,
 				54552A192B7B77DC00A0F5AC /* ResultView.swift */,
+				543D55C32B959FB800EA031C /* AlertView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 			children = (
 				54D4ACB62B70D62A00251A22 /* AppDelegate.swift */,
 				54D4ACB82B70D62A00251A22 /* SceneDelegate.swift */,
+				543D55C72B95A25200EA031C /* Coordinator.swift */,
 				5494A4B82B7B52280085E804 /* Services */,
 				5494A4B72B7B51C80085E804 /* Models */,
 				542B607A2B8B273D00DC18F4 /* Font */,
@@ -164,6 +172,7 @@
 				54552A0F2B7B777200A0F5AC /* QuestionVC.swift */,
 				54552A0D2B7B776900A0F5AC /* LoadingVC.swift */,
 				54552A112B7B777A00A0F5AC /* ResultVC.swift */,
+				543D55C52B959FC300EA031C /* AlertVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -258,15 +267,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				543D55C82B95A25200EA031C /* Coordinator.swift in Sources */,
 				54552A182B7B77D200A0F5AC /* QuestionView.swift in Sources */,
 				542B607C2B8B275700DC18F4 /* Color+.swift in Sources */,
 				54FAF0732B949B360004008F /* Anwser.swift in Sources */,
+				543D55C62B959FC300EA031C /* AlertVC.swift in Sources */,
 				54552A1A2B7B77DC00A0F5AC /* ResultView.swift in Sources */,
 				54D4ACB72B70D62A00251A22 /* AppDelegate.swift in Sources */,
 				54D4ACB92B70D62A00251A22 /* SceneDelegate.swift in Sources */,
 				54552A142B7B77C100A0F5AC /* StartView.swift in Sources */,
 				54D4ACCC2B70D6B700251A22 /* StartVC.swift in Sources */,
 				54552A122B7B777A00A0F5AC /* ResultVC.swift in Sources */,
+				543D55C42B959FB800EA031C /* AlertView.swift in Sources */,
 				54552A102B7B777200A0F5AC /* QuestionVC.swift in Sources */,
 				54552A0E2B7B776900A0F5AC /* LoadingVC.swift in Sources */,
 				543D55C22B959ECE00EA031C /* MyFireStore.swift in Sources */,

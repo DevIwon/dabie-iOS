@@ -10,6 +10,7 @@ class QuestionVC: UIViewController {
     
     //MARK: - Views
     private var questionView: QuestionView!
+    private var alertView: AlertView!
     //MARK: - Properties
     
     //MARK: - Life Cycles
@@ -18,6 +19,7 @@ class QuestionVC: UIViewController {
         
         questionView = QuestionView(frame: self.view.frame)
         self.view = questionView
+        alertView = AlertView(frame: self.view.frame)
         questionView.textView.delegate = self
     }
     
@@ -31,13 +33,28 @@ class QuestionVC: UIViewController {
     }
     
     //MARK: - Actions
-    
     @objc func clickedAnwserButton(sender: UIButton) {
-        let loadingVC = LoadingVC()
-        loadingVC.modalPresentationStyle = .fullScreen
-        
-        present(loadingVC, animated: false, completion: nil)
+        checkEmptyText()
+     
     }
+    func checkEmptyText() {
+        if questionView.textView.text == "" 
+        {
+            self.view.addSubview(alertView)
+            alertView.confirmButton.addTarget(self, action: #selector(confirmButtonTapped(sender: )), for: .touchUpInside)
+        }
+        
+        else
+        {
+            let loadingVC = LoadingVC()
+            loadingVC.modalPresentationStyle = .fullScreen
+            present(loadingVC, animated: false, completion: nil)
+        }
+    }
+    @objc func confirmButtonTapped(sender: UIButton) {
+        alertView.removeFromSuperview()
+    }
+
 }
 
 extension QuestionVC: UITextViewDelegate {
