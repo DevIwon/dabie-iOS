@@ -18,10 +18,10 @@ class MyFireStore {
                 return
             }
             if let documents = querySnapshot?.documents {
-                let yourModels = documents.compactMap { document in
+                let anwsers = documents.compactMap { document in
                     try? document.data(as: AnwserModelInfo.self)
                 }
-                completion(yourModels, nil)
+                completion(anwsers, nil)
             } else {
                 completion(nil, nil)
             }

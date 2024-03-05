@@ -10,7 +10,6 @@ import UIKit
 
 class AlertView: UIView {
     //MARK: - Views
-    
     lazy var titleLabel = UILabel().then  {
         $0.text = "알림"
         $0.font = UIFont(name: "omyu pretty", size: 24)

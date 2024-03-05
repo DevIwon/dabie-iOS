@@ -12,7 +12,6 @@ class AlertVC: UIViewController {
   
     //MARK: - Views
     private var alertView: AlertView!
-    //MARK: - Properties
     
     //MARK: - Life Cycles
     override func loadView() {

@@ -11,7 +11,6 @@ class StartVC: UIViewController {
     
     //MARK: - Views
     private var startView: StartView!
-    //MARK: - Properties
     
     //MARK: - Life Cycles
     override func loadView() {

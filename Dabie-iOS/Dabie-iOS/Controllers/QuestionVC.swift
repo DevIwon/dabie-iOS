@@ -11,7 +11,6 @@ class QuestionVC: UIViewController {
     //MARK: - Views
     private var questionView: QuestionView!
     private var alertView: AlertView!
-    //MARK: - Properties
     
     //MARK: - Life Cycles
     override func loadView() {

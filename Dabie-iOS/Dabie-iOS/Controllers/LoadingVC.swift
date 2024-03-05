@@ -10,7 +10,6 @@ import UIKit
 class LoadingVC: UIViewController {
     //MARK: - Views
     private var loadingView: LoadingView!
-    //MARK: - Properties
     
     //MARK: - Life Cycles
     override func loadView() {

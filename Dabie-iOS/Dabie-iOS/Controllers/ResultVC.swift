@@ -12,7 +12,6 @@ class ResultVC: UIViewController {
     
     //MARK: - Views
     private var resultView: ResultView!
-    //MARK: - Properties
     
     //MARK: - Life Cycles
     override func loadView() {
